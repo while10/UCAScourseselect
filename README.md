@@ -26,13 +26,15 @@
 
 ### 截图
 
-<img src="/lib/screenshot1.png" width="700">  
+<img src="/lib/home.png" width="700">  
 
-<img src="/lib/screenshot2.png" width="700">
+<img src="/lib/admin.png" width="700">
 
-<img src="/lib/screenshot3.png" width="700">   
+<img src="/lib/select1.png" width="700">   
 
-<img src="/lib/screenshot4.png" width="700">
+<img src="/lib/select2.png" width="700">
+
+<img src="/lib/teacher.png" width="700">
 
 ## 说明
 
