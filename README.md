@@ -16,7 +16,7 @@
 * 绑定用户邮箱（实现注册激活，忘记密码等）
 * 站内查找检索 （课程按分类查找，过滤等）
 
-### 目前功能：
+### 以前功能：
 
 * 多角色登陆（学生，老师，管理员）
 * 学生动态选课，退课
@@ -24,15 +24,32 @@
 * 老师对课程下的学生添加、修改成绩
 * 权限控制：老师和学生只能看到自己相关课程信息
 
+### 新增功能：
+
+
+*  统计选课总学分与总课时     
+*  学生已选课程列表分页      
+*  学生查看选课列表分页
+*  管理员审核课程 
+*  管理员重置密码
+*  选课冲突判断
+*  选课人数限制
+*  精确查找
+*  模糊查找
+*  首次登陆初始化密码
+*  课程信息
+*  界面美化
+
+
 ### 截图
 
 <img src="/lib/home.png" width="700">  
 
 <img src="/lib/admin.png" width="700">
 
-<img src="/lib/select1.png" width="700">   
+<img src="/lib/select.png" width="700">   
 
-<img src="/lib/select2.png" width="700">
+<img src="/lib/select1.png" width="700">
 
 <img src="/lib/teacher.png" width="700">
 
@@ -62,19 +79,19 @@ $ rake db:seed
 $ rails s 
 ```
 
-在浏览器中输入`localhost:3000`访问主页
+在浏览器中输入`https://ucaswhile10.herokuapp.com/`访问主页
 
 ##使用
 
 1.学生登陆：
 
-账号：`student1@test.com`
+账号：`student6@test.com`
 
 密码：`password`
 
 2.老师登陆：
 
-账号：`teacher1@test.com`
+账号：`teacher3@test.com`
 
 密码：`password`
 
@@ -85,12 +102,12 @@ $ rails s
 
 密码：`password`
 
-账号中数字都可以替换成2,3...等等
+账号中数字都可以替换成1,2,3...等等
 
 
 ## Heroku云部署
 
-项目可直接在Heroku上免费部署
+项目直接在Heroku上免费部署
 
 1.fork此项目到自己Github账号下
 
@@ -100,9 +117,9 @@ $ rails s
 
 4.下载配置[Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line)命令行工具
 
-5.运行`heroku login`在终端登陆，检查与heroku app的远程连接情况`git config --list | grep heroku`，若未检查到相应的app，请看[这里](http://stackoverflow.com/questions/5129598/how-to-link-a-folder-with-an-existing-heroku-app)
+5.运行`heroku login`在终端登陆，检查与heroku app的远程连接情况`git config --list | grep heroku`，
 
-6.运行部署，详情[请戳这里](https://devcenter.heroku.com/articles/getting-started-with-rails4#rails-asset-pipeline)
+6.运行部署
 
 
 ## 测试
@@ -122,12 +139,9 @@ Finished in 1.202169s, 7.4865 runs/s, 16.6366 assertions/s.
 ```
 
 
-## How to Contribute
+## Fork
 
 先fork此项目，在分支修改后，pull request到主分支
 
-提问请到issues里创建，欢迎contributor！
-
-如果觉得好，给项目点颗星吧～
 
 
