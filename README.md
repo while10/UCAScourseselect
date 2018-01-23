@@ -146,12 +146,15 @@ git remote -v 后，应该出现我的地址。
 `
 
 然后
+
 `
 git fetch upstream
 git merge upstream/master
 `
+
 每次同步代码后，可以执行如下重新构建一下数据库（若rake db:migrate 不行的话，那就加上reset）
 `
+
 rake db:migrate:reset
 rake db:seed
 `
