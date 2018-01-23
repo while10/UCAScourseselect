@@ -139,39 +139,36 @@ fork后，同步我的代码：
 
 添加源
 
-`
+```
 git remote add upstream https://github.com/while10/UCAScourseselect
 
 git remote -v
 
 git remote -v 后，应该出现我的地址。
 
-`
+```
 
 然后
 
-`
+```
 git fetch upstream
 
 git merge upstream/master
 
-`
+```
 
 每次同步代码后，可以执行如下重新构建一下数据库（若rake db:migrate 不行的话，那就加上reset）
-`
+```
 
 rake db:migrate:reset
 
 rake db:seed
 
-`
+```
 由于可能加了新的包，所以最好还要
-
-`
+```
 bundle install
-
-`
-
+```
 更新自己的github仓库（git push)
 
 最后通过pull request即可。
