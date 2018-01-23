@@ -1,7 +1,7 @@
 # UCAScourseselect [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
 
 
-这个项目是根据老师布置的大作业要求新建的项目，主要实现选课系统功能的增加。最终项目在heroku云上部署成功，可点击[选课系统](https://ucaswhile10.herokuapp.com)进行访问。
+此项目主要实现选课系统功能的增加。最终项目在heroku云上部署成功，可点击[选课系统](https://ucaswhile10.herokuapp.com)进行访问。
 
 ### 以前功能：
 
@@ -108,6 +108,11 @@ $ rails s
 
 6.运行部署
 
+`heroku create hrcourseselect
+git push heroku master
+heroku run rake db:migrate
+heroku run rake db:seed`
+
 
 ## 测试
 
@@ -129,6 +134,44 @@ Finished in 1.202169s, 7.4865 runs/s, 16.6366 assertions/s.
 ## Fork
 
 先fork此项目，在分支修改后，pull request到主分支
+
+fork后，同步我的代码：
+
+添加源
+
+`
+git remote add upstream https://github.com/while10/UCAScourseselect
+git remote -v
+git remote -v 后，应该出现我的地址。
+`
+
+然后
+`
+git fetch upstream
+git merge upstream/master
+`
+每次同步代码后，可以执行如下重新构建一下数据库（若rake db:migrate 不行的话，那就加上reset）
+`
+rake db:migrate:reset
+rake db:seed
+`
+由于可能加了新的包，所以最好还要
+
+`
+bundle install
+`
+
+更新自己的github仓库（git push)
+
+最后通过pull request即可。
+
+## Future work
+
+*  添加邮箱通知功能
+*  添加聊天功能
+*  管理员发布公告功能
+
+
 
 
 
