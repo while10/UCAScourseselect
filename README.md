@@ -1,7 +1,7 @@
 # UCAScourseselect [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
 
 
-这个项目是根据老师布置的大作业要求新建的项目，主要实现选课系统功能的增加。
+这个项目是根据老师布置的大作业要求新建的项目，主要实现选课系统功能的增加。最终项目在heroku云上部署成功，可点击[选课系统](https://ucaswhile10.herokuapp.com)进行访问。
 
 ### 以前功能：
 
