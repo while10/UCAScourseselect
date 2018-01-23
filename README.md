@@ -1,20 +1,7 @@
-# CourseSelect [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
-
-### [中文教程1](http://blog.csdn.net/ppp8300885/article/details/52594839) [中文教程2](http://blog.csdn.net/ppp8300885/article/details/52601560) [中文教程3](http://blog.csdn.net/ppp8300885/article/details/52669749)
+# UCAScourseselect [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
 
 
-这个样本系统是基于国科大研究生课程 (高级软件工程) 开发的项目,目的是帮助入门者学习RoR (Ruby on Rails) 
-
-适合新学者的入手的第一个项目 ([演示Demo戳这里](https://courseselect.herokuapp.com/ ))，入门者可以在这个样本系统上增加更多的功能:
-
-* 处理选课冲突、控制选课人数
-* 统计选课学分，学位课等
-* 增加选课的开放、关闭功能
-* 自定义管理员后台
-* 基于OAuth的授权登陆
-* Excel格式的数据导入
-* 绑定用户邮箱（实现注册激活，忘记密码等）
-* 站内查找检索 （课程按分类查找，过滤等）
+这个项目是根据老师布置的大作业要求新建的项目，主要实现选课系统功能的增加。
 
 ### 以前功能：
 
